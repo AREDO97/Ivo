@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<title>home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+margin:0;
+padding:0;
+text-decoration:none;
+list-style:none;
+}
+header{
+color:wheat;
+background:gray;
+justify-content:space-between;
+align-items:center;
+text-align:center;
+display:flex;
+width: 100%;
+}
+.nav-bar nav ul li{
+display:inline-block;
+margin:10px;
+}
+.nav-bar nav ul li a{
+color:white;
+font-size:20px;
+}
+.nav-bar nav ul li::after{
+content:"";
+width:0%;
+height:2px;
+display:block;
+transition:0.5s;
+background:orange;
+
+}
+.nav-bar nav ul li:hover::after{
+width:100%;
+}
+header p{
+font-size:20px;
+color:white;
+margin-left:20px;
+}
+header span{
+color:orange;
+}
+
+header button{
+color:black;
+padding:8px;
+border-radius:5px;
+border:none;
+margin-right:40px;
+background:white;
+}
+header button:hover{
+background:transparent;
+border:2px solid gold;
+color:orange;
+}
+.main{
+top:98%;
+left:10%;
+transform:translate(10%,98%);
+display: grid;
+grid-template-columns: 500px 300px;
+vertical-align: top;
+}
+.main h1 span{
+color:orange;
+}
+.main h1{
+margin-bottom:20px;
+}
+.main div{
+margin-top:20px;
+}
+.main div button{
+padding:10px;
+border-radius:5px;
+border:none;
+color:white;
+
+
+}
+.main div .hire{
+background:black;
+}
+.main div .more{
+background:orange;
+margin-left:20px;
+}
+img{
+width:200px;
+height: 200px;
+object-fit: cover;
+border-radius: 100px;
+animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+</style>
+</head>
+<body>
+<header>
+<p>Han<span>nah</span></p>
+<div class="nav-bar">
+<nav>
+<ul>
+<li><a href"#">Portforlio</a></li>
+<li><a href"#">Services</a></li>
+<li><a href"#">Experience</a></li>
+<li><a href"#">Projects</a></li>
+<li><a href"#">Education</a></li>
+</ul>
+</nav>
+</div>
+<button>Contact Me</button>
+</header>
+
+<section class="main">
+    <div class="content">
+        <h3>Hi</h3>
+        <h1>I'm <span>Hannah</span><br>a frontend Developer</h1>
+        <h4>At your service at all times of the day 24 hrs<br>
+        Available at all social media platforms to serve you
+        </h4>
+        <div>
+        <button class="hire">Hire Me</button>
+        <button class="more">Learn more</button>
+        <input type="date">
+        </div>
+    </div>
+
+    <div>
+        <img src="C:/Users/IVAN/Desktop/HOME/man.jpg" alt="">
+
+    </div>
+</section>
+</body>
+</html>
